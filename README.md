@@ -20,22 +20,6 @@ They can also be configured or just by placing prg files in prg directory. In th
 * you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name)
 * programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
 
-This repository contains:
-
-* menu.asm
-    * ASM source code for cartridge menu program, Kick Assembler 5.5
-* menu.prg
-    * alredy built menu program
-* compilation.cfg and prg directory
-    * sample configuration file and prg files to assemble a cartridge
-* crtgen.py
-    * Python program that links prg files with menu program and generates bin file that can be burned to eprom, or converted to CRT file for emulation (using VICE's cartconv)
-    * Program should run on any system that has Python and required modules installed (see beginning of crtgen.py for required modules)
-* readme.txt
-    * pure text readme file
-* gpl.txt
-    * GNU General Public License version 3
-
 You can try out cartridge generation with supplied files:
 ```
 python crtgen.py
@@ -68,6 +52,23 @@ Two such programs are in "nonworking" directory.
 If someone has some insights abot why they don't work, or if someone finds another one that doesn't work, please contact us.
 
 Contact e-mails: msolajic and zzarko at gmail
+
+## Repository contents ##
+
+* menu.asm
+    * ASM source code for cartridge menu program, Kick Assembler 5.5
+* menu.prg
+    * alredy built menu program
+* compilation.cfg and prg directory
+    * sample configuration file and prg files to assemble a cartridge
+* crtgen.py
+    * Python program that links prg files with menu program and generates bin file that can be burned to eprom, or converted to CRT file for emulation (using VICE's cartconv)
+    * Program should run on any system that has Python and required modules installed (see beginning of crtgen.py for required modules)
+* readme.txt
+    * pure text readme file
+* gpl.txt
+    * GNU General Public License version 3
+
 
 
 

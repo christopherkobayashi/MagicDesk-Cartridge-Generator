@@ -14,7 +14,7 @@ Cartridge can be configured with CFG file (otherwise, defaults will be used).
 
 Menu programs can be configured inside CFG file (more advanced option).
 
-They can also be configured or just by placing prg files in prg directory. Then:
+They can also be configured or just by placing prg files in prg directory. In that case:
 
 * name of the file will be used as menu name. 
 * you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name)
