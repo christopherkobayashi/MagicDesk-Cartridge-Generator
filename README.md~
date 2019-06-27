@@ -35,7 +35,7 @@ C64 code was tested in VICE 3.3 and on a real PAL and NTSC C64.
 
 For assembling C64 source, [Kick Assembler](http://theweb.dk/KickAssembler/) version 5.5 or later is needed (probably works with earlier versions too, but I haven't tested).
 
-If you want to test cartridge in VICE emulator, first convert it to crt format:
+If you want to test cartridge in [VICE emulator](http://vice-emu.sourceforge.net/), first convert it to crt format:
 ```
 cartconv -t md -i compilation.bin -o compilation.crt
 ```
@@ -69,18 +69,26 @@ Contact e-mails: msolajic and zzarko at gmail
 * gpl.txt
     * GNU General Public License version 3
 
-
-
-
 ## Copyright ##
 
 Cartridge schematics and PCB design (c) 2013-2019 Marko Šolajić
 
 menu.prg, menu.asm and crtgen.py (c) 2013-2019 Žarko Živanov
 
-Programs in prg directory are copyrighted by their respective owners.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+**Programs in prg directory are copyrighted by their respective owners.**
 
 ## Sample configuration file with all descriptions ##
 
