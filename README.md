@@ -6,6 +6,8 @@ This program can be used to generate Commodore 64 cartridges in Magic Desk forma
 
 ![Generated cartridge](./md3.png)
 
+Cartridge hardware can be found at [Marko Šolajić's GitHub page](http://www.example.com/)
+
 All programs must be in PRG format (first 2 bytes are the load address).
 
 Cartridge can be configured with CFG file (more advanced option), or just by placing prg files in prg directory.
@@ -28,8 +30,6 @@ This repository contains:
     * Program should run on any system that has Python and required modules installed (see beginning of crtgen.py for required modules)
 * readme.txt
     * pure text readme file
-* eagle directory
-    * complete cartridge schematics and PCB design files in Eagle format, with explanations in eagle/readme.txt
 * gpl.txt
     * GNU General Public License version 3
 
