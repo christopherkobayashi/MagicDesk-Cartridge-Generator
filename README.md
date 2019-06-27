@@ -6,7 +6,7 @@ This program can be used to generate Commodore 64 cartridges in Magic Desk forma
 
 ![Generated cartridge](./md3.png)
 
-Cartridge hardware can be found at [Marko Šolajić's GitHub page](http://www.example.com/)
+Cartridge hardware can be found at [Marko Šolajić's GitHub page](http://www.example.com/).
 
 All programs must be in PRG format (first 2 bytes are the load address).
 
