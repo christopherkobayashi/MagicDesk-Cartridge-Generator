@@ -24,18 +24,18 @@ You can try out cartridge generation with supplied files:
 ```
 python crtgen.py
 ```
-* will create cartridge from all prg files in prg directory
+* this will create cartridge from all prg files in prg directory
 ```
 python crtgen.py compilation
 ```
-* will create cartridge based on compilation.cfg file
+* this will create cartridge based on compilation.cfg file
 
 Python code was tested on Linux and Windows, with Python 2 and 3.
 C64 code was tested in VICE 3.3 and on a real PAL and NTSC C64.
 
-For assembling C64 source, Kick Assembler 5.5 is needed (probably works with earlier versions too, but I haven't tested).
+For assembling C64 source, [Kick Assembler](http://theweb.dk/KickAssembler/) version 5.5 or later is needed (probably works with earlier versions too, but I haven't tested).
 
-If you want to test cartridge in VICE emulator, first convert it to crt format:
+If you want to test cartridge in [VICE emulator](http://vice-emu.sourceforge.net/), first convert it to crt format:
 ```
 cartconv -t md -i compilation.bin -o compilation.crt
 ```
@@ -69,9 +69,6 @@ Contact e-mails: msolajic and zzarko at gmail
 * gpl.txt
     * GNU General Public License version 3
 
-
-
-
 ## Copyright ##
 
 Cartridge schematics and PCB design (c) 2013-2019 Marko Šolajić
@@ -79,8 +76,6 @@ Cartridge schematics and PCB design (c) 2013-2019 Marko Šolajić
 menu.prg, menu.asm and crtgen.py (c) 2013-2019 Žarko Živanov
 
 Programs in prg directory are copyrighted by their respective owners.
-
-
 
 ## Sample configuration file with all descriptions ##
 
