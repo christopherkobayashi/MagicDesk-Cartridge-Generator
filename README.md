@@ -13,9 +13,9 @@ Cartridge can be configured with CFG file (more advanced option), or just by pla
 If second approach is used, name of the file will be used as menu name. 
 You can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name).
 
-Programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
+For second approach, programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
 
-This archive contains:
+This repository contains:
 
 * menu.asm
     * ASM source code for cartridge menu program, Kick Assembler 5.5
@@ -27,7 +27,7 @@ This archive contains:
     * Python program that links prg files with menu program and generates bin file that can be burned to eprom, or converted to CRT file for emulation (using VICE's cartconv)
     * Program should run on any system that has Python and required modules installed (see beginning of crtgen.py for required modules)
 * readme.txt
-    * this file
+    * pure text readme file
 * eagle directory
     * complete cartridge schematics and PCB design files in Eagle format, with explanations in eagle/readme.txt
 * gpl.txt
