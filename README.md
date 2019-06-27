@@ -3,10 +3,16 @@
 ## Description ##
 
 This program can be used to generate Commodore 64 cartridges in Magic Desk format, with programs that can be selected from menu:
+
 ![Generated cartridge](./md3.png)
+
 All programs must be in PRG format (first 2 bytes are the load address).
 
-Cartridge can be configured with CFG file (more advanced option), or just by placing prg files in prg directory (name of the file will be used as menu name; you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name).
+Cartridge can be configured with CFG file (more advanced option), or just by placing prg files in prg directory.
+
+If second approach is used, name of the file will be used as menu name. 
+You can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name).
+
 Programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
 
 This archive contains:
