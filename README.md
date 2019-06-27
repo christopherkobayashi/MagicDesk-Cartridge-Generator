@@ -2,19 +2,15 @@
 
 ## Description ##
 
-This program can be used to generate Commodore 64 cartridges in Magic Desk format, with programs that can be selected from menu:
+This program can be used to generate Commodore 64 cartridges in Magic Desk format, with C64 programs that can be selected from menu:
 
 ![Generated cartridge](./md3.png)
 
 Cartridge hardware can be found at [Marko Šolajić's GitHub page](http://www.example.com/).
 
-All programs must be in PRG format (first 2 bytes are the load address).
+All C64 programs must be in one-file PRG format (first 2 bytes are the load address). Cartridge can be configured with CFG file (otherwise, defaults will be used).
 
-Cartridge can be configured with CFG file (otherwise, defaults will be used).
-
-Menu programs can be configured inside CFG file (more advanced option).
-
-They can also be configured or just by placing prg files in prg directory. In that case:
+Menu programs can be configured inside CFG file (more advanced option). They can also be configured or just by placing prg files in prg directory. In that case:
 
 * name of the file will be used as menu name. 
 * you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name)
@@ -30,9 +26,6 @@ python crtgen.py compilation
 ```
 * this will create cartridge based on compilation.cfg file
 
-Python code was tested on Linux and Windows, with Python 2 and 3.
-C64 code was tested in VICE 3.3 and on a real PAL and NTSC C64.
-
 For assembling C64 source, [Kick Assembler](http://theweb.dk/KickAssembler/) version 5.5 or later is needed (probably works with earlier versions too, but I haven't tested).
 
 If you want to test cartridge in [VICE emulator](http://vice-emu.sourceforge.net/), first convert it to crt format:
@@ -47,9 +40,9 @@ x64 -cartcrt compilation.crt
 
 As of VICE version 3.0, Magic Desk cartridge is supported with up to 1MB configurations (Thanks VICE team!!!).
 
-There are some programs that won't work when started from cartridge, but for now we do not know why.
-Two such programs are in "nonworking" directory.
-If someone has some insights abot why they don't work, or if someone finds another one that doesn't work, please contact us.
+Python code was tested on Linux and Windows, with Python 2 and 3. C64 code was tested in VICE 3.3 and on a real PAL and NTSC C64. If you find bugs in the code, please report as bitbucket issue, or to one of our e-mails.
+
+There are some programs that won't work when started from cartridge, but for now we do not know why.Two such programs are in "nonworking" directory. If someone has some insights abot why they don't work, or if someone finds another one that doesn't work, please contact us.
 
 Contact e-mails: msolajic and zzarko at gmail
 
