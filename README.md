@@ -2,7 +2,8 @@
 
 ## Description ##
 
-This program can be used to generate Commodore 64 cartridges in Magic Desk format, with programs that can be selected from menu.
+This program can be used to generate Commodore 64 cartridges in Magic Desk format, with programs that can be selected from menu:
+![Generated cartridge](./md3.png)
 All programs must be in PRG format (first 2 bytes are the load address).
 
 Cartridge can be configured with CFG file (more advanced option), or just by placing prg files in prg directory (name of the file will be used as menu name; you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name).
@@ -36,9 +37,10 @@ python crtgen.py compilation
 ```
 * will create cartridge based on compilation.cfg file
 
-Python code crtgen.py was tested on Linux and Windows, with Python 2 and 3.
-For assembling C64 source, Kick Assembler 5.5 is needed (probably works with earlier versions too, but I haven't tested).
+Python code was tested on Linux and Windows, with Python 2 and 3.
 C64 code was tested in VICE 3.3 and on a real PAL and NTSC C64.
+
+For assembling C64 source, Kick Assembler 5.5 is needed (probably works with earlier versions too, but I haven't tested).
 
 If you want to test cartridge in VICE emulator, first convert it to crt format:
 ```

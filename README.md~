@@ -9,6 +9,7 @@ Cartridge can be configured with CFG file (more advanced option), or just by pla
 Programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
 
 This archive contains:
+
 * menu.asm
     * ASM source code for cartridge menu program, Kick Assembler 5.5
 * menu.prg
@@ -35,9 +36,10 @@ python crtgen.py compilation
 ```
 * will create cartridge based on compilation.cfg file
 
-Python code crtgen.py was tested on Linux and Windows, with Python 2 and 3.
-For assembling C64 source, Kick Assembler 5.5 is needed (probably works with earlier versions too, but I haven't tested).
+Python code was tested on Linux and Windows, with Python 2 and 3.
 C64 code was tested in VICE 3.3 and on a real PAL and NTSC C64.
+
+For assembling C64 source, Kick Assembler 5.5 is needed (probably works with earlier versions too, but I haven't tested).
 
 If you want to test cartridge in VICE emulator, first convert it to crt format:
 ```
