@@ -9,7 +9,6 @@ Cartridge can be configured with CFG file (more advanced option), or just by pla
 Programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
 
 This archive contains:
-
 * menu.asm
     * ASM source code for cartridge menu program, Kick Assembler 5.5
 * menu.prg
