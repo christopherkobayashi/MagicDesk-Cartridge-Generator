@@ -6,14 +6,14 @@ This program can be used to generate Commodore 64 cartridges in Magic Desk forma
 
 ![Generated cartridge](./md3.png)
 
-Cartridge hardware can be found at [Marko Šolajić's GitHub page](http://www.example.com/).
+Cartridge hardware can be found at [Marko Šolajić's GitHub page](https://github.com/msolajic/c64-magic-desk-512k).
 
 All C64 programs must be in one-file PRG format (first 2 bytes are the load address). Cartridge can be configured with CFG file (otherwise, defaults will be used).
 
 Menu programs can be configured inside CFG file (more advanced option). They can also be configured or just by placing prg files in prg directory. In that case:
 
 * name of the file will be used as menu name. 
-* you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name)
+* you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name). Additionally, if you want multiple menus, you need to use 3-digit prefix in the form XYY_, where X is a menu number (1-8), and YY is placing inside menu. All this numbers do not have to be successive.
 * programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
 
 You can try out cartridge generation with supplied files:
@@ -81,7 +81,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-**Programs in prg directory are copyrighted by their respective owners.**
+**Programs in prg and nonworking directories are copyrighted by their respective owners.**
 
 ## Sample configuration file with all descriptions ##
 
