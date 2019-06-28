@@ -6,15 +6,16 @@ This program can be used to generate Commodore 64 cartridges in Magic Desk forma
 
 ![Generated cartridge](./md3.png)
 
-Cartridge hardware can be found at [Marko Šolajić's GitHub page](https://github.com/msolajic/c64-magic-desk-512k).
+Cartridge hardware can be found at Marko Šolajić's [Magic Desk compatible C64 cartridge](https://github.com/msolajic/c64-magic-desk-512k) page.
 
-All C64 programs must be in one-file PRG format (first 2 bytes are the load address). Cartridge can be configured with CFG file (otherwise, defaults will be used).
+All C64 programs must be one-file in PRG format (first 2 bytes are the load address). Cartridge can be configured with CFG file (otherwise, defaults will be used).
 
-Menu programs can be configured inside CFG file (more advanced option). They can also be configured or just by placing prg files in prg directory. In that case:
+Menu programs can be configured inside CFG file (more advanced option). They can also be configured just by placing prg files inside prg directory. In that case:
 
 * name of the file will be used as menu name. 
-* you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name). Additionally, if you want multiple menus, you need to use 3-digit prefix in the form XYY_, where X is a menu number (1-8), and YY is placing inside menu. All this numbers do not have to be successive.
+* you can make arbitrary order of files by placing N_ prefix, where N is a 1-3 digit number (prefix won't be a part of the menu name). Additionally, if you want multiple menus, you need to use 3-digit prefix in the form XYY_, where X is a menu number (1-8), and YY is placing inside menu. Numbers do not have to be successive.
 * programs in prg directory can also have suffix _N or _0xH where N is decimal, and H is hex number, and if present, that number will be used as run address (suffix won't be a part of the menu name).
+
 
 You can try out cartridge generation with supplied files:
 ```
@@ -26,13 +27,14 @@ python crtgen.py compilation
 ```
 * this will create cartridge based on compilation.cfg file
 
+
 For assembling C64 source, [Kick Assembler](http://theweb.dk/KickAssembler/) version 5.5 or later is needed (probably works with earlier versions too, but I haven't tested).
 
 If you want to test cartridge in [VICE emulator](http://vice-emu.sourceforge.net/), first convert it to crt format:
 ```
 cartconv -t md -i compilation.bin -o compilation.crt
 ```
-and then run with:
+and then run x64 with cartcrt option:
 ```
 x64 -cartcrt compilation.crt
 ```
@@ -55,8 +57,8 @@ Contact e-mails: msolajic and zzarko at gmail
 * compilation.cfg and prg directory
     * sample configuration file and prg files to assemble a cartridge
 * crtgen.py
-    * Python program that links prg files with menu program and generates bin file that can be burned to eprom, or converted to CRT file for emulation (using VICE's cartconv)
-    * Program should run on any system that has Python and required modules installed (see beginning of crtgen.py for required modules)
+    * Python program that links prg files with menu program and generates bin file that can be burned to eprom/flash, or converted to CRT file for emulation (using VICE's cartconv)
+    * it should run on any system that has Python and required modules installed (see beginning of crtgen.py for required modules)
 * readme.txt
     * pure text readme file
 * gpl.txt
